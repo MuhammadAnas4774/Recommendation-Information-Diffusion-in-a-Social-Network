@@ -1,0 +1,52 @@
+{
+  "student_info": {
+    "name": "Muhammad Anas",
+    "roll_number": "23F-3094",
+    "course": "SNTP (Social Networks and Text Processing)",
+    "assignment": "Assignment #02",
+    "institution": "National University of Computer and Emerging Sciences (FAST-NUCES)",
+    "campus": "Chiniot-Faisalabad Campus"
+  },
+  "dataset": {
+    "ratings_zip": "ratings_data.zip",
+    "trust_zip": "trust_data.zip",
+    "demo_sample_users": 1000,
+    "train_ratio": 0.8,
+    "random_seed": 42,
+    "relevance_threshold": 4.0
+  },
+  "recommender": {
+    "latent_dim": 20,
+    "learning_rate": 0.01,
+    "reg_lambda": 0.05,
+    "epochs": 20,
+    "knn_k": 20,
+    "top_k_eval": [5, 10, 20]
+  },
+  "social": {
+    "alphas": [0.0, 0.01, 0.05, 0.1, 0.25, 0.5],
+    "default_alpha": 0.1,
+    "compare_num_neighbors": 15
+  },
+  "diffusion": {
+    "icm_base_p": 0.15,
+    "sir_beta": 0.25,
+    "sir_gamma": 0.10,
+    "max_steps": 20,
+    "mc_simulations": 15
+  },
+  "budget": {
+    "budgets": [1, 2, 5, 10, 20],
+    "default_budget": 5,
+    "celf_mc_evals": 15
+  },
+  "groups": {
+    "group_sizes": [3, 5, 8],
+    "methods": ["average", "least_misery", "most_pleasure"],
+    "num_test_groups": 10
+  },
+  "intervention": {
+    "damping_factors": [0.2, 0.5, 0.8, 1.0],
+    "fatigue_thresholds": [1, 2, 3]
+  }
+}
